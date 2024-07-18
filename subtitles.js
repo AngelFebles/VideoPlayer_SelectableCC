@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const video = document.getElementById('video-player');
     const subtitleContainer = document.getElementById('subtitle-container');
 
-    fetch('.cc/***yourCCHere**') // Change this to the path of your CC file
+    fetch('cc/***insertyourcchere***') // Change this to the path of your CC file
         .then(response => response.text())
         .then(data => {
             const subtitles = parseVTT(data);
