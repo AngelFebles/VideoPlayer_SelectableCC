@@ -1,0 +1,21 @@
+body {
+    overflow: hidden; 
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#video-player {
+    width: 100%;
+}
+#subtitle-container {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    user-select: text;
+}
