@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Video Player</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="video-container">
+        <select id="video-select">
+            <option value="">Select a video</option>
+        </select>
         <video id="video-player" controls>
-            <source src="video\***yourvideohere****" type="video/mp4"> <!--change the video path here-->
+            <source id="video-source" src="" type="video/mp4">
         </video>
         <div id="subtitle-container"></div>
     </div>
     <script src="subtitles.js"></script>
+
 </body>
 </html>
