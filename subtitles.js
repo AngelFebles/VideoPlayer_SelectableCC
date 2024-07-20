@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const videoSource = document.getElementById('video-source');
     const subtitleContainer = document.getElementById('subtitle-container');
 
+
         // Fetch list of videos from the node server
         fetch('/videos')
         .then(response => response.json())
@@ -22,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (selectedVideo) {
             videoSource.src = selectedVideo;
             videoPlayer.load();
-            const ccFile = `files/${selectedVideo.split('/').pop().replace(/\.[^/.]+$/, "")}.ja.srt`;
+            const ccFile = `files/${selectedVideo.split('/').pop().replace(/\.[^/.]+$/, "")}.srt`;
 
             //This is what makes CC selectable and compatible with hover dictionary (and the whole point behind this project)
             //We are transforming cc into js objects and we display them on top of the video.
