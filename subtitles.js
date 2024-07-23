@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const videoPlayer = document.getElementById('video-player');
     const videoSource = document.getElementById('video-source');
     const subtitleContainer = document.getElementById('subtitle-container');
-
+   
 
         // Fetch list of videos from the node server
         fetch('/videos')
@@ -48,6 +48,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
         }
     });
+
+     // Pause video when hovering over the subtitle container
+    subtitleContainer.addEventListener('mouseover', function() {
+        videoPlayer.pause();
+    });
+    
+    subtitleContainer.addEventListener('mouseout', function() {
+        videoPlayer.play();
+    });
+
 });
 
   // Fetch and parse subtitle file
@@ -78,3 +88,4 @@ function timeToSeconds(timeString) {
     const [hours, minutes, seconds] = timeString.trim().split(':').map(parseFloat);
     return hours * 3600 + minutes * 60 + seconds;
 }
+
