@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Menu</title>
+    <title>Video Player</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="menu-container">
-        <h1>Select a Video</h1>
-        <ul id="video-list"></ul>
+    <div id="video-container">
+        <video id="video-player" controls>
+            <source id="video-source" src="" type="video/mp4">
+        </video>
+        <div id="subtitle-container"></div>
     </div>
     <script src="script.js"></script>
+   
 </body>
 </html>
