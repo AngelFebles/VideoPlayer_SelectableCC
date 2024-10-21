@@ -61,6 +61,13 @@ document.addEventListener('DOMContentLoaded', function() {
     subtitleContainer.addEventListener('mouseout', function() {
         videoPlayer.play();
     });
+
+
+    //Override fullscreen button
+        
+
+
+
 });
 
 // Fetch and parse subtitle file
